@@ -3,6 +3,7 @@ package mercuryregister.steps;
 import cucumber.api.DataTable;
 import mercuryregister.chromeDriver.LaunchApplication;
 import mercuryregister.pages.BookingPage;
+import mercuryregister.pages.HomePage;
 import mercuryregister.pages.LoginPage;
 import mercuryregister.pages.RegistrationPage;
 import net.thucydides.core.annotations.Step;
@@ -13,6 +14,8 @@ public class BookAFlightSteps extends LaunchApplication {
 
     private RegistrationPage registrationPage;
     private BookingPage bookingPage;
+    private HomePage homePage;
+
 
     @Step
     public void userRegisters(DataTable registrationDataTable) throws InterruptedException {
@@ -57,6 +60,7 @@ public class BookAFlightSteps extends LaunchApplication {
         bookingPage.selectsAValueFromAirlineDepartOptions(bookingDetails.get("Airline"));
         bookingPage.selectsAValueFromAirlineReturnOptions(bookingDetails.get("Airline"));
         bookingPage.userClicksOnContinueButtonForSecondPage();
+        bookingPage.userClicksOnSecurePurchaseButton();
     }
 
     @Step
@@ -80,5 +84,11 @@ public class BookAFlightSteps extends LaunchApplication {
     public void assertThatTheWebsitePageIsOpened() {
         LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
         loginPage.assertThatTheWebsitePageIsOpened();
+    }
+
+    public void userChecksOutTheLowestPriceDestination() {
+        HomePage homePage = PageFactory.initElements(driver, HomePage.class);
+        homePage.clicksOnHomePageLink();
+        homePage.selectAndPrintTheLowestDestinationPrice();
     }
 }

@@ -62,8 +62,14 @@ public class BookAFlightDefinition extends LaunchApplication{
        steps.assertThatUserCantGoToBookingPage();
     }
 
+    @And("^user checks out the lowest price destination$")
+    public void userChecksOutTheLowestPriceDestination() {
+       steps.userChecksOutTheLowestPriceDestination();
+    }
+
     @After
     public void tearDown() {
         LaunchApplication.closeDriver();
     }
+
 }

@@ -24,16 +24,18 @@ public class BookingPage {
     private WebElement continueButtonForFirstPage;
     @FindBy(css = "body > div > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(4) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(5) > td > form > p > input[type=image]")
     private WebElement continueButtonForSecondPage;
-    @FindBy(css = "body > div > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(4) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(5) > td > form > table > tbody > tr:nth-child(2) > td > table > tbody > tr:nth-child(1) > td:nth-child(1) > b > font")
-    private WebElement departingFromAsserted;
-    @FindBy(css = "body > div > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(4) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(5) > td > form > table > tbody > tr:nth-child(2) > td > table > tbody > tr:nth-child(1) > td:nth-child(2) > b")
-    private WebElement dateAsserted;
-    @FindBy(css = "body > div > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(4) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(5) > td > form > table > tbody > tr:nth-child(2) > td > table > tbody > tr:nth-child(3) > td.data_left > font > b")
-    private WebElement airlineAsserted;
     @FindBy(css = "body > div > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(4) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(5) > td > form > table:nth-child(9) > tbody > tr:nth-child(7) > td.frame_action_xrows > input[type=radio]")
     private WebElement departAirline;
     @FindBy(css = "body > div > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(4) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(5) > td > form > table:nth-child(10) > tbody > tr:nth-child(7) > td.frame_action_xrows > input[type=radio]")
     private WebElement returnAirline;
+    @FindBy(css = "body > div > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(4) > td > table > tbody > tr:nth-child(1) > td:nth-child(2) > table > tbody > tr:nth-child(5) > td > table > tbody > tr:nth-child(3) > td > font > b")
+    private WebElement departingFromAsserted;
+    @FindBy(css = "body > div > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(4) > td > table > tbody > tr:nth-child(1) > td:nth-child(2) > table > tbody > tr:nth-child(5) > td > table > tbody > tr:nth-child(3) > td > font")
+    private WebElement dateAsserted;
+    @FindBy(css = "body > div > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(4) > td > table > tbody > tr:nth-child(1) > td:nth-child(2) > table > tbody > tr:nth-child(5) > td > table > tbody > tr:nth-child(3) > td > font")
+    private WebElement airlineAsserted;
+    @FindBy(css = "body > div > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(4) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(5) > td > form > table > tbody > tr:nth-child(24) > td > input[type=image]")
+    private WebElement SecurePurchaseButton;
 
 
     WebDriver driver;
@@ -141,9 +143,19 @@ public class BookingPage {
         continueButtonForSecondPage.click();
     }
 
+    public void userClicksOnSecurePurchaseButton() throws InterruptedException {
+        JavascriptExecutor js = ((JavascriptExecutor) driver);
+        js.executeScript("window.scrollTo(100, document.body.scrollHeight)");
+        Thread.sleep(1000);
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+        By SecurePurchaseButtonQuery = By.cssSelector("body > div > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(4) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(5) > td > form > table > tbody > tr:nth-child(24) > td > input[type=image]");
+        wait.until(ExpectedConditions.presenceOfElementLocated(SecurePurchaseButtonQuery));
+        SecurePurchaseButton.click();
+    }
+
     public void assertThatBookingDetailsAreCorrect(String departingFrom, String month, String day, String airline) {
         WebDriverWait wait = new WebDriverWait(driver, 30);
-        By departingFromQuery = By.cssSelector("body > div > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(4) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(5) > td > form > table > tbody > tr:nth-child(2) > td > table > tbody > tr:nth-child(1) > td:nth-child(1) > b > font");
+        By departingFromQuery = By.cssSelector("body > div > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(4) > td > table > tbody > tr:nth-child(1) > td:nth-child(2) > table > tbody > tr:nth-child(5) > td > table > tbody > tr:nth-child(3) > td > font > b");
         wait.until(ExpectedConditions.presenceOfElementLocated(departingFromQuery));
 
         String actualDepartingFrom = departingFromAsserted.getText();
@@ -156,5 +168,6 @@ public class BookingPage {
         String actualAirline = airlineAsserted.getText();
         Assert.assertTrue(actualAirline.contains(airline));
     }
+
 
 }

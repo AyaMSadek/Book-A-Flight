@@ -11,6 +11,7 @@ Feature: Book a Flight - Happy Path
     Then user makes sure that the booking details are true with the following details:
       | DepartingFrom | Month | Day | Airline        |
       | Zurich        | 1     | 9   | Pangea Airline |
+    And user checks out the lowest price destination
     Examples:
       | userNameValue  | passwordValue |
       | Silicon Expert | 123456        |

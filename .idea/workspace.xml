@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5e783d3c-cb0f-4409-8494-04477f483ede" name="Default Changelist" comment="" />
+    <list default="true" id="5e783d3c-cb0f-4409-8494-04477f483ede" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mercuryregister/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mercuryregister/definitions/BookAFlightDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mercuryregister/definitions/BookAFlightDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mercuryregister/pages/BookingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mercuryregister/pages/BookingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mercuryregister/steps/BookAFlightSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mercuryregister/steps/BookAFlightSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/mercuryregister/BookAFlight.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/mercuryregister/BookAFlight.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/3d7dfd80e053c47286a3454c89768aa53de1ecf35220a6e07803dfdddc6d28fb.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/3d7dfd80e053c47286a3454c89768aa53de1ecf35220a6e07803dfdddc6d28fb.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/3d7dfd80e053c47286a3454c89768aa53de1ecf35220a6e07803dfdddc6d28fb.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/3d7dfd80e053c47286a3454c89768aa53de1ecf35220a6e07803dfdddc6d28fb.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-3d7dfd80e053c47286a3454c89768aa53de1ecf35220a6e07803dfdddc6d28fb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-3d7dfd80e053c47286a3454c89768aa53de1ecf35220a6e07803dfdddc6d28fb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mercuryregister/BookAFlight.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mercuryregister/BookAFlight.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mercuryregister/definitions/BookAFlightDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mercuryregister/definitions/BookAFlightDefinition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mercuryregister/steps/BookAFlightSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mercuryregister/steps/BookAFlightSteps.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,14 +29,23 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
   <component name="ProjectId" id="1YiJhJxYPoHORZS0WpABuflmCK2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/chromDriver" />
@@ -103,8 +126,8 @@
     </configuration>
     <list>
       <item itemvalue="Cucumber java.Feature: BookAFlight" />
-      <item itemvalue="JUnit.BookAFlightRunner" />
       <item itemvalue="Cucumber java.Feature: BookAFlightValidations" />
+      <item itemvalue="JUnit.BookAFlightRunner" />
     </list>
     <recent_temporary>
       <list>
@@ -137,6 +160,7 @@
       <workItem from="1583436486701" duration="1100000" />
       <workItem from="1583478640924" duration="75000" />
       <workItem from="1583479790460" duration="29224000" />
+      <workItem from="1583569789046" duration="5539000" />
     </task>
     <servers />
   </component>
@@ -149,6 +173,7 @@
     <option name="PERFORM_EDIT_IN_BACKGROUND" value="false" />
     <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="false" />
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="170" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583487625019">
@@ -179,46 +204,46 @@
       <screen x="59" y="27" width="1307" height="741" />
     </state>
     <state x="490" y="189" width="424" height="484" key="FileChooserDialogImpl/59.27.1307.741@59.27.1307.741" timestamp="1583479622185" />
-    <state width="1261" height="7" key="GridCell.Tab.0.bottom" timestamp="1583518096385">
+    <state width="1261" height="23" key="GridCell.Tab.0.bottom" timestamp="1583575423568">
       <screen x="59" y="27" width="1307" height="741" />
     </state>
-    <state width="1261" height="7" key="GridCell.Tab.0.bottom/59.27.1307.741@59.27.1307.741" timestamp="1583518096385" />
-    <state width="1261" height="7" key="GridCell.Tab.0.center" timestamp="1583518096384">
+    <state width="1261" height="23" key="GridCell.Tab.0.bottom/59.27.1307.741@59.27.1307.741" timestamp="1583575423568" />
+    <state width="1261" height="23" key="GridCell.Tab.0.center" timestamp="1583575423566">
       <screen x="59" y="27" width="1307" height="741" />
     </state>
-    <state width="1261" height="7" key="GridCell.Tab.0.center/59.27.1307.741@59.27.1307.741" timestamp="1583518096384" />
-    <state width="1261" height="7" key="GridCell.Tab.0.left" timestamp="1583518096384">
+    <state width="1261" height="23" key="GridCell.Tab.0.center/59.27.1307.741@59.27.1307.741" timestamp="1583575423566" />
+    <state width="1261" height="23" key="GridCell.Tab.0.left" timestamp="1583575423565">
       <screen x="59" y="27" width="1307" height="741" />
     </state>
-    <state width="1261" height="7" key="GridCell.Tab.0.left/59.27.1307.741@59.27.1307.741" timestamp="1583518096384" />
-    <state width="1261" height="7" key="GridCell.Tab.0.right" timestamp="1583518096385">
+    <state width="1261" height="23" key="GridCell.Tab.0.left/59.27.1307.741@59.27.1307.741" timestamp="1583575423565" />
+    <state width="1261" height="23" key="GridCell.Tab.0.right" timestamp="1583575423567">
       <screen x="59" y="27" width="1307" height="741" />
     </state>
-    <state width="1261" height="7" key="GridCell.Tab.0.right/59.27.1307.741@59.27.1307.741" timestamp="1583518096385" />
-    <state width="1261" height="199" key="GridCell.Tab.1.bottom" timestamp="1583513897580">
+    <state width="1261" height="23" key="GridCell.Tab.0.right/59.27.1307.741@59.27.1307.741" timestamp="1583575423567" />
+    <state width="1261" height="79" key="GridCell.Tab.1.bottom" timestamp="1583572162485">
       <screen x="59" y="27" width="1307" height="741" />
     </state>
-    <state width="1261" height="199" key="GridCell.Tab.1.bottom/59.27.1307.741@59.27.1307.741" timestamp="1583513897580" />
-    <state width="1261" height="199" key="GridCell.Tab.1.center" timestamp="1583513897580">
+    <state width="1261" height="79" key="GridCell.Tab.1.bottom/59.27.1307.741@59.27.1307.741" timestamp="1583572162485" />
+    <state width="1261" height="79" key="GridCell.Tab.1.center" timestamp="1583572162484">
       <screen x="59" y="27" width="1307" height="741" />
     </state>
-    <state width="1261" height="199" key="GridCell.Tab.1.center/59.27.1307.741@59.27.1307.741" timestamp="1583513897580" />
-    <state width="1261" height="199" key="GridCell.Tab.1.left" timestamp="1583513897580">
+    <state width="1261" height="79" key="GridCell.Tab.1.center/59.27.1307.741@59.27.1307.741" timestamp="1583572162484" />
+    <state width="1261" height="79" key="GridCell.Tab.1.left" timestamp="1583572162484">
       <screen x="59" y="27" width="1307" height="741" />
     </state>
-    <state width="1261" height="199" key="GridCell.Tab.1.left/59.27.1307.741@59.27.1307.741" timestamp="1583513897580" />
-    <state width="1261" height="199" key="GridCell.Tab.1.right" timestamp="1583513897580">
+    <state width="1261" height="79" key="GridCell.Tab.1.left/59.27.1307.741@59.27.1307.741" timestamp="1583572162484" />
+    <state width="1261" height="79" key="GridCell.Tab.1.right" timestamp="1583572162484">
       <screen x="59" y="27" width="1307" height="741" />
     </state>
-    <state width="1261" height="199" key="GridCell.Tab.1.right/59.27.1307.741@59.27.1307.741" timestamp="1583513897580" />
+    <state width="1261" height="79" key="GridCell.Tab.1.right/59.27.1307.741@59.27.1307.741" timestamp="1583572162484" />
     <state x="265" y="38" key="SettingsEditor" timestamp="1583479605153">
       <screen x="59" y="27" width="1307" height="741" />
     </state>
     <state x="265" y="38" key="SettingsEditor/59.27.1307.741@59.27.1307.741" timestamp="1583479605153" />
-    <state x="363" y="259" key="com.intellij.ide.util.TipDialog" timestamp="1583479404931">
+    <state x="363" y="259" key="com.intellij.ide.util.TipDialog" timestamp="1583569791988">
       <screen x="59" y="27" width="1307" height="741" />
     </state>
-    <state x="363" y="259" key="com.intellij.ide.util.TipDialog/59.27.1307.741@59.27.1307.741" timestamp="1583479404931" />
+    <state x="363" y="259" key="com.intellij.ide.util.TipDialog/59.27.1307.741@59.27.1307.741" timestamp="1583569791988" />
     <state x="59" y="27" width="1297" height="741" key="new project wizard" timestamp="1583432650787">
       <screen x="59" y="27" width="1307" height="741" />
     </state>

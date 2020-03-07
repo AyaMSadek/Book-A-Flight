@@ -11,7 +11,7 @@ and Selenium webDriver-Java.
 6) Select and print the lowest price destination from home page.
 
 # Another paths that the test goes through:
-Login with different ways:
+User tries to book a flight with different ways:
 * Login with invalid email or password.
 * Login with an account that isn't signed up for Mercury.
 * Verify that the user isn't logged out when navigating back from the browser after logging in successfully.

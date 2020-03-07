@@ -1,5 +1,6 @@
 package mercuryregister.pages;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,6 +14,8 @@ import java.util.List;
 public class HomePage {
     @FindBy(css = "body > div > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr > td > table > tbody > tr:nth-child(1) > td:nth-child(2) > font > a")
     WebElement homePageLink;
+    @FindBy(css = "body > div > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr > td > table > tbody > tr:nth-child(2) > td:nth-child(2) > a")
+    WebElement flightsPageLink;
 
 
     WebDriver driver;
@@ -45,4 +48,27 @@ public class HomePage {
         }
         System.out.println("THE LOWEST PRICE DESTINATION IS: $" + lowestPrice);
     }
+
+    public void userOpensTheWebsiteURL() {
+        driver.get("http://newtours.demoaut.com/mercuryreservation.php");
+    }
+
+    public void clicksOnFlightsPageLink() {
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+        By flightsPageLinkQuery = By.cssSelector("body > div > table > tbody > tr > td:nth-child(1) > table > tbody > tr > td > table > tbody > tr > td > table > tbody > tr:nth-child(2) > td:nth-child(2) > a");
+        wait.until(ExpectedConditions.presenceOfElementLocated(flightsPageLinkQuery));
+        flightsPageLink.click();
+    }
+
+    public void assertThatHomePageIsStillOpened() {
+        String expectedURL = "http://newtours.demoaut.com/mercuryreservation.php";
+        String currentUrl = driver.getCurrentUrl();
+        Assert.assertEquals(expectedURL,currentUrl);
+    }
+
+    public void userNavigatesBackFromBrowserAndForwardAgainToHomePage() {
+        driver.navigate().back();
+        driver.navigate().forward();
+    }
+
 }

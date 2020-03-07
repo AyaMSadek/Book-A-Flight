@@ -45,7 +45,7 @@ public class BookAFlightSteps extends LaunchApplication {
     @Step
     public void userLoginsWithUserNameAndPassword(String user, String password) {
         LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
-        loginPage.userClicksOnSignInLink();
+        loginPage.userClicksOnSignInButton();
         loginPage.userLoginsWithUserNameAndPassword(user,password);
     }
 
@@ -90,5 +90,36 @@ public class BookAFlightSteps extends LaunchApplication {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         homePage.clicksOnHomePageLink();
         homePage.selectAndPrintTheLowestDestinationPrice();
+    }
+
+    public void userOpenedTheWebsiteURL() {
+        HomePage homePage = PageFactory.initElements(driver, HomePage.class);
+        homePage.userOpensTheWebsiteURL();
+    }
+
+    public void userTriesToOpenFlightsPage() {
+        HomePage homePage = PageFactory.initElements(driver, HomePage.class);
+        homePage.clicksOnFlightsPageLink();
+    }
+
+    public void assertThatHomePageIsStillOpened() {
+        HomePage homePage = PageFactory.initElements(driver, HomePage.class);
+        homePage.assertThatHomePageIsStillOpened();
+    }
+
+
+    public void assertThatSignOnPageIsStillOpened() {
+        LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
+        loginPage.assertThatSignOnPageIsOpened();
+    }
+
+    public void userNavigatesBackFromBrowserAndForwardAgainToHomePage() {
+        HomePage homePage = PageFactory.initElements(driver, HomePage.class);
+        homePage.userNavigatesBackFromBrowserAndForwardAgainToHomePage();
+    }
+
+    public void assertThatUserIsStillLoggedInAndHomePageOpensSuccessfully() {
+        HomePage homePage = PageFactory.initElements(driver, HomePage.class);
+        homePage.assertThatHomePageIsStillOpened();
     }
 }

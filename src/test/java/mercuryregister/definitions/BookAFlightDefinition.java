@@ -1,7 +1,5 @@
 package mercuryregister.definitions;
 
-import cucumber.api.PendingException;
-import cucumber.api.java.After;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -23,12 +21,12 @@ public class BookAFlightDefinition extends LaunchApplication{
        launchApplication.openWebsitePage();
    }
 
-    @Given("^user is registered with the following values:$")
+    @Given("^user registers with the following values:$")
     public void userIsRegisteredWithTheFollowingValues(DataTable registrationDataTable) throws InterruptedException {
         steps.userRegisters(registrationDataTable);
     }
 
-    @And("^user logged in as \"([^\"]*)\" with \"([^\"]*)\"$")
+    @And("^user logs in as \"([^\"]*)\" with \"([^\"]*)\"$")
     public void userLoggedInAsWith(String user, String password) throws Throwable {
         steps.assertThatUserNameIsCorrect(user);
         steps.userLoginsWithUserNameAndPassword(user,password);
@@ -51,11 +49,6 @@ public class BookAFlightDefinition extends LaunchApplication{
        steps.assertThatTheWebsitePageIsOpened();
     }
 
-    @When("^user tries to login with \"([^\"]*)\" or \"([^\"]*)\"$")
-    public void userTriesToLoginWithWith(String user, String password) throws Throwable {
-        steps.userTriesToLoginWithInvalidUserNameOrPassword(user,password);
-
-    }
 
     @Then("^user can't go to Booking page$")
     public void userCanTGoToBookingPage() {
@@ -65,11 +58,6 @@ public class BookAFlightDefinition extends LaunchApplication{
     @And("^user checks out the lowest price destination$")
     public void userChecksOutTheLowestPriceDestination() {
        steps.userChecksOutTheLowestPriceDestination();
-    }
-
-    @After
-    public void tearDown() {
-        LaunchApplication.closeDriver();
     }
 
 }

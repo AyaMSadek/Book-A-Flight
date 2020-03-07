@@ -13,8 +13,4 @@ public class LaunchApplication  {
         driver.get("http://newtours.demoaut.com/mercuryreservation.php");
 
     }
-
-    protected static void closeDriver() {
-        driver.close();
-    }
 }

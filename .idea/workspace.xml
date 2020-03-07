@@ -2,18 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e783d3c-cb0f-4409-8494-04477f483ede" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mercuryregister/pages/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mercuryregister/definitions/BookAFlightValidationsDefinition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mercuryregister/chromeDriver/LaunchApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mercuryregister/chromeDriver/LaunchApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/mercuryregister/definitions/BookAFlightDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mercuryregister/definitions/BookAFlightDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mercuryregister/pages/BookingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mercuryregister/pages/BookingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mercuryregister/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mercuryregister/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mercuryregister/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mercuryregister/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/mercuryregister/steps/BookAFlightSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mercuryregister/steps/BookAFlightSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/mercuryregister/BookAFlight.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/mercuryregister/BookAFlight.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/serenity/3d7dfd80e053c47286a3454c89768aa53de1ecf35220a6e07803dfdddc6d28fb.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/3d7dfd80e053c47286a3454c89768aa53de1ecf35220a6e07803dfdddc6d28fb.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/serenity/3d7dfd80e053c47286a3454c89768aa53de1ecf35220a6e07803dfdddc6d28fb.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/3d7dfd80e053c47286a3454c89768aa53de1ecf35220a6e07803dfdddc6d28fb.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-3d7dfd80e053c47286a3454c89768aa53de1ecf35220a6e07803dfdddc6d28fb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-3d7dfd80e053c47286a3454c89768aa53de1ecf35220a6e07803dfdddc6d28fb.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/mercuryregister/BookAFlight.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mercuryregister/BookAFlight.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mercuryregister/chromeDriver/LaunchApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mercuryregister/chromeDriver/LaunchApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/mercuryregister/definitions/BookAFlightDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mercuryregister/definitions/BookAFlightDefinition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mercuryregister/pages/BookingPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mercuryregister/pages/BookingPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/mercuryregister/steps/BookAFlightSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mercuryregister/steps/BookAFlightSteps.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -160,8 +163,16 @@
       <workItem from="1583436486701" duration="1100000" />
       <workItem from="1583478640924" duration="75000" />
       <workItem from="1583479790460" duration="29224000" />
-      <workItem from="1583569789046" duration="5539000" />
+      <workItem from="1583569789046" duration="10519000" />
     </task>
+    <task id="LOCAL-00001" summary="Add &quot;The Lowest Price Destination&quot; step">
+      <created>1583575584114</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583575584115</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,16 +185,18 @@
     <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="false" />
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Add &quot;The Lowest Price Destination&quot; step" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add &quot;The Lowest Price Destination&quot; step" />
   </component>
   <component name="WindowStateProjectService">
     <state x="170" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583487625019">
       <screen x="59" y="27" width="1307" height="741" />
     </state>
     <state x="170" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/59.27.1307.741@59.27.1307.741" timestamp="1583487625019" />
-    <state x="159" y="125" width="1107" height="543" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1583515741172">
+    <state x="159" y="125" width="1107" height="543" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1583578381666">
       <screen x="59" y="27" width="1307" height="741" />
     </state>
-    <state x="159" y="125" width="1107" height="543" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/59.27.1307.741@59.27.1307.741" timestamp="1583515741172" />
+    <state x="159" y="125" width="1107" height="543" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/59.27.1307.741@59.27.1307.741" timestamp="1583578381666" />
     <state x="691" y="187" width="666" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583483650530">
       <screen x="59" y="27" width="1307" height="741" />
     </state>
@@ -200,26 +213,30 @@
       <screen x="59" y="27" width="1307" height="741" />
     </state>
     <state x="465" y="304" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/59.27.1307.741@59.27.1307.741" timestamp="1583485278189" />
+    <state x="119" y="27" width="1177" height="741" key="CommitChangelistDialog2" timestamp="1583575583828">
+      <screen x="59" y="27" width="1307" height="741" />
+    </state>
+    <state x="119" y="27" width="1177" height="741" key="CommitChangelistDialog2/59.27.1307.741@59.27.1307.741" timestamp="1583575583828" />
     <state x="490" y="189" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583479622185">
       <screen x="59" y="27" width="1307" height="741" />
     </state>
     <state x="490" y="189" width="424" height="484" key="FileChooserDialogImpl/59.27.1307.741@59.27.1307.741" timestamp="1583479622185" />
-    <state width="1261" height="23" key="GridCell.Tab.0.bottom" timestamp="1583575423568">
+    <state width="1261" height="266" key="GridCell.Tab.0.bottom" timestamp="1583581077254">
       <screen x="59" y="27" width="1307" height="741" />
     </state>
-    <state width="1261" height="23" key="GridCell.Tab.0.bottom/59.27.1307.741@59.27.1307.741" timestamp="1583575423568" />
-    <state width="1261" height="23" key="GridCell.Tab.0.center" timestamp="1583575423566">
+    <state width="1261" height="266" key="GridCell.Tab.0.bottom/59.27.1307.741@59.27.1307.741" timestamp="1583581077254" />
+    <state width="1261" height="266" key="GridCell.Tab.0.center" timestamp="1583581077253">
       <screen x="59" y="27" width="1307" height="741" />
     </state>
-    <state width="1261" height="23" key="GridCell.Tab.0.center/59.27.1307.741@59.27.1307.741" timestamp="1583575423566" />
-    <state width="1261" height="23" key="GridCell.Tab.0.left" timestamp="1583575423565">
+    <state width="1261" height="266" key="GridCell.Tab.0.center/59.27.1307.741@59.27.1307.741" timestamp="1583581077253" />
+    <state width="1261" height="266" key="GridCell.Tab.0.left" timestamp="1583581077252">
       <screen x="59" y="27" width="1307" height="741" />
     </state>
-    <state width="1261" height="23" key="GridCell.Tab.0.left/59.27.1307.741@59.27.1307.741" timestamp="1583575423565" />
-    <state width="1261" height="23" key="GridCell.Tab.0.right" timestamp="1583575423567">
+    <state width="1261" height="266" key="GridCell.Tab.0.left/59.27.1307.741@59.27.1307.741" timestamp="1583581077252" />
+    <state width="1261" height="266" key="GridCell.Tab.0.right" timestamp="1583581077253">
       <screen x="59" y="27" width="1307" height="741" />
     </state>
-    <state width="1261" height="23" key="GridCell.Tab.0.right/59.27.1307.741@59.27.1307.741" timestamp="1583575423567" />
+    <state width="1261" height="266" key="GridCell.Tab.0.right/59.27.1307.741@59.27.1307.741" timestamp="1583581077253" />
     <state width="1261" height="79" key="GridCell.Tab.1.bottom" timestamp="1583572162485">
       <screen x="59" y="27" width="1307" height="741" />
     </state>
@@ -240,6 +257,10 @@
       <screen x="59" y="27" width="1307" height="741" />
     </state>
     <state x="265" y="38" key="SettingsEditor/59.27.1307.741@59.27.1307.741" timestamp="1583479605153" />
+    <state x="307" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1583575586161">
+      <screen x="59" y="27" width="1307" height="741" />
+    </state>
+    <state x="307" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/59.27.1307.741@59.27.1307.741" timestamp="1583575586161" />
     <state x="363" y="259" key="com.intellij.ide.util.TipDialog" timestamp="1583569791988">
       <screen x="59" y="27" width="1307" height="741" />
     </state>

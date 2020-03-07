@@ -78,4 +78,9 @@ public class LoginPage {
         String loginUrl ="http://newtours.demoaut.com/mercurysignon.php";
         Assert.assertEquals(loginUrl, driver.getCurrentUrl());
     }
+
+    public void assertThatSignOnPageIsOpened() {
+        String signOnUrl ="http://newtours.demoaut.com/mercurysignon.php";
+        Assert.assertEquals(signOnUrl, driver.getCurrentUrl());
+    }
 }

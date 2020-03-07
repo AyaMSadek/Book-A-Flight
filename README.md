@@ -15,3 +15,6 @@ User tries to book a flight with different ways:
 * Login with invalid email or password.
 * Login with an account that isn't signed up for Mercury.
 * Verify that the user isn't logged out when navigating back from the browser after logging in successfully.
+
+![BOOKING A FLIGHT DEMO](https://github.com/AyaMSadek/Book-A-Flight/blob/master/SiliconExpertProjectDemo.gif)
+
